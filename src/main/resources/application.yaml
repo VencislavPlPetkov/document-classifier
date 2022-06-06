@@ -1,0 +1,22 @@
+# activated profile & bean overriding
+# ===============================
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: local
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+    servlet:
+      path: /api
+
+# servlet related configuration
+# ===============================
+server:
+  port: 8081
+  host: http://localhost
+
+#Document API
+documents:
+  api: "http://localhost:8080/v1/documents"

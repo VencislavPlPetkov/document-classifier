@@ -1,0 +1,9 @@
+
+spring:
+  config:
+    activate:
+      on-profile: local
+
+#Document API
+documents:
+  api: "http://localhost:8080/v1/documents"
